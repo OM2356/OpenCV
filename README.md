@@ -58,40 +58,7 @@ python resize_image.py
 
 ---
 
-# 🧠 Python Code
 
-```python
-import cv2
-
-# Load image
-image = cv2.imread("images/sample.jpg")
-
-# Check image loaded
-if image is None:
-    print("Error: Image not found!")
-    exit()
-
-# Resize image
-resized_image = cv2.resize(image, (500, 500))
-
-# Show original image
-cv2.imshow("Original Image", image)
-
-# Show resized image
-cv2.imshow("Resized Image", resized_image)
-
-# Save resized image
-cv2.imwrite("resized_output.jpg", resized_image)
-
-print("✅ Image resized successfully!")
-print("💾 Saved as resized_output.jpg")
-
-# Wait until key press
-cv2.waitKey(0)
-
-# Close all windows
-cv2.destroyAllWindows()
-```
 
 ---
 
